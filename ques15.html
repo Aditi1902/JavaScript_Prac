@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Enter a number:");
+
+        function checkprime(n){
+            if(n==1){
+                alert("1 is not a prime or composite number.");
+                console.log("1 is not a prime or composite number.");          
+            }
+            else{
+                if(n<1){
+                    alert("Negative number can't be a prime number.");
+                    console.log("Negative number can't be a prime number.");
+                }
+                else{
+                    for(i=2; n > i; i++)
+                    {
+                        if(n%i==0){
+                            alert("False");
+                            console.log("False");
+                            break;
+                        }
+                        else{
+                            alert("True");
+                            console.log("True");
+                        }
+                    }
+                }
+            }
+        }
+        let value= checkprime(n);
+    </script>
+</body>
+</html>

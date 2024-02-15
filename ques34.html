@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 10px;
+    }
+</style>
+<body>
+    <h2>Program to calculate multiplication and division of two numbers:</h2>
+    <form action="">
+        <label for="fno">First No.:</label>
+        <input type="text" id="fno" name="fno"><br>
+        <label for="sno">Second No.:</label>
+        <input type="text" id="sno" name="sno"><br>
+        <input type="button" onclick="multiply()" value="Multiply">
+        <input type="button" onclick="divide()" value="Divide">
+    </form>
+    <p>Result: <span id="ans"></span></p>
+
+    <script>
+        function multiply(){
+            num1 = document.getElementById("fno").value;
+            num2 = document.getElementById("sno").value;
+           result=document.getElementById("ans").innerHTML=num1*num2; 
+           console.log("Result is:"+result);  
+        }
+        
+        function divide(){
+            num1 = document.getElementById("fno").value;
+            num2 = document.getElementById("sno").value;
+           result=document.getElementById("ans").innerHTML=num1/num2;  
+           console.log("Result is:"+result); 
+        }
+        
+    </script>
+</body>
+</html>
