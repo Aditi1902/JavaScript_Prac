@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inde.css">
+    
+</head>
+<body>
+<div>
+<h1>Increment and Decrement Count</h1>
+
+<button type="button" onclick="increment()">Increment</button>
+
+<button type="button" onclick="decrement()">Decrement</button>
+
+<p id="demo">0</p>
+
+<button type="reset" onclick="reset()">Reset</button>
+</div>
+    <script>
+ let num=0;
+
+
+function increment(){
+    console.log("Function Increment is activated");
+num+=1;
+document.getElementById("demo").innerHTML=num;
+console.log(num);
+}
+
+function decrement(){
+    console.log("Function decrement is activated");
+    num-=1;
+    document.getElementById("demo").innerHTML=num;
+    console.log(num);
+}
+ function reset(){
+    console.log("function reset is activated");
+    num=0;
+    document.getElementById("demo").innerHTML=num;
+ }
+    </script>
+</body>
+</html>
