@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="charcount.css">
+</head>
+<body>
+    <div>
+    <h1>Character Counter</h1>
+    <form action="">
+<label for="char">Type the word in the box:</label> <br>
+        <input type="text" id="char" name="char">
+    </form>
+
+    <button type="submit" onclick="calculate()">Calculate</button>
+
+    <p>Result: <span id="demo"></span> </p>
+</div>
+
+    <script>
+function calculate(){
+
+    console.log("Calculate function is activated.")
+    let a= document.getElementById("char").value;
+    console.log(a)
+    let result= a.length;
+    console.log("result:",result)
+    document.getElementById("demo").innerHTML=result;
+}
+
+    </script>
+</body>
+</html>
