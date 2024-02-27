@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Program to print sum of numbers in an array of numbers:</h2>
+<p>The array is: [<span id="arr"></span>]</p>
+<p>Sum: <span id="demo"></span></p>
+    <script>
+        let sum=0;
+
+        const array=[12, 26, 63, 22 , 1, 9, 52, 20, 32]
+        for(i=0; i<array.length; i++){
+            sum+=array[i];
+        }
+        console.log("Sum is :", sum);
+
+        document.getElementById("arr").innerHTML=array;
+        document.getElementById("demo").innerHTML=sum;
+
+    </script>
+</body>
+</html>
