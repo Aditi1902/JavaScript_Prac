@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+ <h2>Program that receives an array of numbers and returns an array containing only the positive numbers</h2>
+</p> Input Array:[<span id="input"></span>]</p>
+<p>New Array:[<span id="demo"></span>]</p>
+
+ <script>
+input= prompt("Enter an array of numbers seperated by ',' including negative numbers:")
+array= input.split(",");
+console.log(array);
+document.getElementById("input").innerHTML=array;
+let newarray=[];
+
+for(let i=0; i<array.length; i++){
+
+    if(array[i]>=0){
+newarray.push(array[i]);
+    }
+}
+console.log("New Array:",newarray);
+document.getElementById("demo").innerHTML=newarray;
+
+</script>    
+</body>
+</html>
